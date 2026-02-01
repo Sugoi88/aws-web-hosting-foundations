@@ -1,0 +1,21 @@
+[ Internet ]
+     |
+[ Route 53 ]
+     |
+[ Application Load Balancer ]
+     |
+----------------------------------
+|        Public Subnet            |
+|  - ALB                          |
+|  - Bastion Host                 |
+----------------------------------
+     |
+----------------------------------
+|        Private Subnets           |
+|  - EC2 Web Server (AZ A)         |
+|  - EC2 Web Server (AZ B)         |
+----------------------------------
+     |
+[ NAT Gateway ]
+     |
+[ Internet (Outbound Only) ]
